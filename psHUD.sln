@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "psHUD", "ConsoleApplication2\psHUD.csproj", "{AC5445A9-1902-4B63-957B-B6EAA72F11DD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "psHUD", "psHUD\psHUD.csproj", "{AC5445A9-1902-4B63-957B-B6EAA72F11DD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
