@@ -4,3 +4,12 @@ obj
 
 # mstest test results
 TestResults
+bin
+obj
+*.suo
+*.user
+*.publish.xml
+packages\*
+packages
+csx
+*.nupkg
