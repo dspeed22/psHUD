@@ -27,10 +27,7 @@ namespace psHUD
         private const int GWL_EXSTYLE = -20;
         private const int WS_EX_LAYERED = 0x80000;
         private const int LWA_ALPHA = 0x2;
-        private const int LWA_COLORKEY = 0x1;
-        private const int MOD_CONTROL = 0x2;
         private int tildeKey = 0xC0;
-        public static int WM_HOTKEY = 0x312;
 
         void MakeTransparent(byte pct)
         {
