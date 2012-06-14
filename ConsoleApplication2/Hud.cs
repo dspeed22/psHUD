@@ -84,13 +84,18 @@ namespace psHUD
 
         private void ToggleWindow()
         {
+
+            //doing the 2 step process to give the illusion of animating.
+            //also make the window grab/release focus
             if (isHidden)
             {
-                User32.ShowWindow(windowHandle, 1);
+                User32.ShowWindow(windowHandle, 5);//show
+                User32.ShowWindow(windowHandle, 9);//restore
             }
             else
             {
-                User32.ShowWindow(windowHandle, 0);
+                User32.ShowWindow(windowHandle, 6);//minimize
+                User32.ShowWindow(windowHandle, 0);//hide
             }
             isHidden = !isHidden;
             hotKeyPressed = false;
