@@ -101,13 +101,14 @@ namespace psHUD
         private void InitPowershell(object args)
         {
             var config = RunspaceConfiguration.Create();
-            string[] arg = (string[])args;
             ConsoleShell.Start(
                 config,
                 "psHUD: a Powershell heads up display (v0.1)",
                 "",
-                arg
+                new string[] { "-noexit", "cd \\" }
+
             );
+
 
             isRunning = false;
             hotKeyEvent.Set();
@@ -125,7 +126,6 @@ namespace psHUD
 
         private void Setposition(int x, int y)
         {
-
             User32.SetWindowPos(windowHandle,
             new IntPtr(HWND_TOPMost),
             x, y, 0, 0,
