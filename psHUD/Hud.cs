@@ -68,7 +68,7 @@ namespace psHUD
         private void SetupHotkey()
         {
 
-            keyId = HotKeyManager.RegisterHotKey((Keys)tildeKey, KeyModifiers.Control);
+            keyId = HotKeyManager.RegisterHotKey((Keys)tildeKey, KeyModifiers.Alt);
             HotKeyManager.HotKeyPressed += new EventHandler<HotKeyEventArgs>(HotKeyManager_HotKeyPressed);
         }
 
